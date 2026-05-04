@@ -1,0 +1,11 @@
+#include "main.h"
+#include <stdio.h>
+
+void print_diagsums(int *a, int size){
+    int i = 0, running_sum_first = 0, running_sum_second = 0;
+    for (i = 0; i < size; i++){
+            running_sum_first += *(a + ((i * size) + i));
+            running_sum_second += *(a + ((i * size) + (size - 1 - i)));
+    }
+    printf("%d, %d\n", running_sum_first, running_sum_second);
+}

@@ -1,0 +1,6 @@
+tests/
+main.c
+*.o
+test
+*.exe
+main

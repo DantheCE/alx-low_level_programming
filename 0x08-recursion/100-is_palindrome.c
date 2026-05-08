@@ -3,19 +3,17 @@
 /**
  * _strlen - string length helper function
  * @s: pointer to the first char of string
+ * @l: variable to track string length
  *
  * Return: length of string
  */
-int _strlen(char *s)
+int _strlen(char *s, int l)
 {
-	int l = 0;
-
-	while (*s != '\0')
+	if (*s == '\0')
 	{
-		l++;
-		s++;
+		return (l);
 	}
-	return (l);
+	return (_strlen(s + 1, l + 1));
 }
 /**
  * is_palindrome_check - logic engine for palindrome checker
@@ -44,7 +42,7 @@ int is_palindrome_check(char *first, char *last)
  */
 int is_palindrome(char *s)
 {
-	int length = _strlen(s);
+	int length = _strlen(s, 0);
 
 	if (length == 0 || length == 1)
 	{

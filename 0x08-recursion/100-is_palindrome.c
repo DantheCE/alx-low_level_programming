@@ -28,6 +28,7 @@ int is_palindrome_check(char *first, char *last)
 int is_palindrome(char *s)
 {
 	int length = strlen(s);
+
 	if (length == 0 || length == 1)
 	{
 		return (1);

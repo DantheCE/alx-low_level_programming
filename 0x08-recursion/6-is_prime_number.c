@@ -10,17 +10,13 @@
  */
 int prime_checker(int n, int d)
 {
-	if (n <= 1)
+	if (d * d > n)
 	{
-		return (0);
+		return (1);
 	}
 	if (n % d == 0)
 	{
 		return (0);
-	}
-	if (d > (int)sqrt(n))
-	{
-		return (1);
 	}
 	return (prime_checker(n, d + 1));
 }
@@ -32,5 +28,13 @@ int prime_checker(int n, int d)
  */
 int is_prime_number(int n)
 {
+	if (n < 2)
+	{
+		return (0);
+	}
+	if (n <= 3)
+	{
+		return (1);
+	}
 	return (prime_checker(n, 2));
 }

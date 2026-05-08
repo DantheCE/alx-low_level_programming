@@ -5,7 +5,7 @@
  * @x: base
  * @y: exponent
  *
- * Return: power of a number
+ * Return: power of a number, -1 if the y is not a valid exponent
  */
 int _pow_recursion(int x, int y)
 {

@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts_recursion - copies memory area
+ * _puts_recursion - prints a string using recursion
  * @s: pointer to first char
  *
  * Return: Nothing

@@ -3,3 +3,4 @@ tests/
 *.o
 *.exe
 _putchar*c
+main

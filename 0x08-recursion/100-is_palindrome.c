@@ -1,6 +1,23 @@
 #include "main.h"
 
 /**
+ * _strlen - string length helper function
+ * @s: pointer to the first char of string
+ *
+ * Return: length of string
+ */
+int _strlen(char *s)
+{
+	int l = 0;
+
+	while (*s != '\0')
+	{
+		l++;
+		s++;
+	}
+	return (l);
+}
+/**
  * is_palindrome_check - logic engine for palindrome checker
  * @first: pointer to the first char of string
  * @last: pointer to the last char of string
@@ -27,7 +44,7 @@ int is_palindrome_check(char *first, char *last)
  */
 int is_palindrome(char *s)
 {
-	int length = strlen(s);
+	int length = _strlen(s);
 
 	if (length == 0 || length == 1)
 	{

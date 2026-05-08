@@ -17,7 +17,7 @@ int guess_checker(int base, int n)
 	{
 		return (-1);
 	}
-	return(guess_checker(base, n + 1));
+	return (guess_checker(base, n + 1));
 }
 /**
  * _sqrt_recursion - calculate the square root of a number using recursion

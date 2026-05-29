@@ -7,7 +7,7 @@
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: result of multiplication, or 1 on error
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
@@ -35,8 +35,8 @@ int main(int argc, char *argv[])
 	if (neg % 2)
 	{
 		printf("%c%d\n", '-', result);
-		return (result);
+		return (0);
 	}
 	printf("%d\n", result);
-	return (result);
+	return (0);
 }

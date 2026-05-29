@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - prints the number of arguments
@@ -11,10 +12,10 @@
 int main(int argc, char *argv[])
 {
 	(void)argv;
-	if (argv[1] == "ALX")
+	if (strcmp("ALX", argv[1]))
 	{
-		printf("%d\n", argc);
+		printf("%d\n", argc - 1);
 	}
-	printf("%d\n", argc - 1);
+	printf("%d\n", argc);
 	return (0);
 }

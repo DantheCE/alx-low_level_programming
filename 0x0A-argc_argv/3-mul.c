@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 	int result = 1;
 	int neg = 0;
 	int i = 1;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
@@ -34,8 +35,8 @@ int main(int argc, char *argv[])
 	if (neg)
 	{
 		printf("%c%d\n", '-', result);
-		return result;
+		return (result);
 	}
 	printf("%d\n", result);
-	return result;
+	return (result);
 }

@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 /**
- * multiply_two_numbers - multiplies two numbers
+ * main - multiplies two numbers
  * @argc: argument count
  * @argv: argument vector
  *
  * Return: result of multiplication, or 1 on error
  */
-int  multiply_two_numbers(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int result = 1;
 	int neg = 0;

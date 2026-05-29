@@ -2,14 +2,15 @@
 #include <stdio.h>
 
 /**
- * print_program_name - prints the name of the program
+ * main - prints the name of the program
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: Nothing
+ * Return: 0
  */
-void print_program_name(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     (void)argc;
     printf("%s\n", *argv);
+    return (0);
 }

@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- * print_all_args - prints all arguments received
+ * main - prints all arguments received
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: Nothing
+ * Return: 0
  */
-void print_all_args(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     int i = 0;
     (void)argc;
@@ -16,4 +16,5 @@ void print_all_args(int argc, char *argv[])
     {
 	    printf("%s\n", *argv++);
     }
+    return (0);
 }

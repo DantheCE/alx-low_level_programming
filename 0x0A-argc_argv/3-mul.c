@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	{
 		if (*argv[i] == '-')
 		{
-			neg = 1;
+			neg++;
 			result *= strtol(argv[i] + 1, argv, 10);
 			i++;
 			continue;
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		result *= strtol(argv[i], argv, 10);
 		i++;
 	}
-	if (neg)
+	if (neg % 2)
 	{
 		printf("%c%d\n", '-', result);
 		return (result);

@@ -22,6 +22,12 @@ A program that prints all arguments it receives, one per line.
 A program that multiplies two numbers and prints the result.
 * Prototype: `int multiply_two_numbers(int argc, char *argv[]);`
 
+### [4-add.c](4-add.c)
+A program that adds positive numbers.
+* Prints the result followed by a new line.
+* If no number is passed, prints `0`.
+* If one of the numbers contains symbols that are not digits, prints `Error` and returns `1`.
+
 ### [main.c](main.c)
 The main entry point file used to test the implementations of the helper functions declared in `main.h`.
 

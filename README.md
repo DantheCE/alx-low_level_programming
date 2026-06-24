@@ -19,7 +19,14 @@ The projects in this repository cover a range of fundamental concepts in C:
 
 | Directory | Description |
 | --------- | ----------- |
-| [0x07-pointers_arrays_strings](./0x07-pointers_arrays_strings) | More pointers, arrays and strings in C. |
+| [0x04-more_functions_nested_loops](./0x04-more_functions_nested_loops) | More functions, more nested loops in C. |
+| [0x05-pointers_arrays_strings](./0x05-pointers_arrays_strings) | Pointers, arrays and strings in C. |
+| [0x06-pointers_arrays_strings](./0x06-pointers_arrays_strings) | More pointers, arrays and strings in C. |
+| [0x07-pointers_arrays_strings](./0x07-pointers_arrays_strings) | Even more pointers, arrays and strings in C. |
+| [0x08-recursion](./0x08-recursion) | Recursion in C. |
+| [0x09-static_libraries](./0x09-static_libraries) | Static libraries in C. |
+| [0x0A-argc_argv](./0x0A-argc_argv) | Arguments passed to a program (argc, argv) in C. |
+| [0x0B-malloc_free](./0x0B-malloc_free) | Dynamic memory allocation (malloc, free) in C. |
 
 ## Technologies
 

@@ -16,7 +16,6 @@ This folder contains solutions and exercises for the ALX Low-level programming p
 | `8-print_diagsums.c` | Function that prints the sum of the two diagonals of a square matrix of integers. |
 | `_putchar.c` | Helper function for character output. |
 | `main.h` | Header file containing function prototypes. |
-| `tests/` | Directory containing test files for the functions. |
 
 ## Build and Requirements
 
@@ -37,15 +36,6 @@ To compile a specific task with a main file (e.g., `0-memset.c`):
 ```bash
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 main.c 0-memset.c -o 0-memset
 ./0-memset
-```
-
-### Running Tests
-
-The `tests/` directory contains individual test drivers for each function. You can run them as follows:
-
-```bash
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 tests/test_memset.c 0-memset.c -o tests/test_memset
-./tests/test_memset
 ```
 
 ## Notes

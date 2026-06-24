@@ -11,26 +11,8 @@ This folder contains solutions and exercises for the ALX Low-level programming p
 
 | File | Description |
 | ---- | ----------- |
-| `0-isupper.c` | Function that checks for uppercase character. |
-| `0-memset.c` | Function that fills memory with a constant byte. |
-| `0-strcat.c` | Function that concatenates two strings. |
-| `1-isdigit.c` | Function that checks for a digit (0 through 9). |
-| `1-memcpy.c` | Function that copies memory area. |
-| `1-strncat.c` | Function that concatenates two strings up to n bytes. |
-| `2-strchr.c` | Function that locates a character in a string. |
-| `2-strlen.c` | Function that returns the length of a string. |
-| `2-strncpy.c` | Function that copies a string. |
-| `3-islower.c` | Function that checks for lowercase character. |
-| `3-puts.c` | Function that prints a string, followed by a new line, to stdout. |
-| `3-strcmp.c` | Function that compares two strings. |
-| `3-strspn.c` | Function that gets the length of a prefix substring. |
-| `4-isalpha.c` | Function that checks for alphabetic character. |
-| `4-strpbrk.c` | Function that searches a string for any of a set of bytes. |
-| `5-strstr.c` | Function that locates a substring. |
-| `6-abs.c` | Function that computes the absolute value of an integer. |
-| `9-strcpy.c` | Function that copies the string pointed to by `src`, including the terminating null byte, to the buffer pointed to by `dest`. |
-| `_putchar.c` | Helper function for character output. |
 | `main.h` | Header file containing function prototypes. |
+| `main.c` | Main files for testing. |
 | `create_static_lib.sh` | Shell script that creates the library `libmy.a` from all `.c` files in the directory. |
 
 ## Build and Requirements

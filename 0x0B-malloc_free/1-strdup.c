@@ -16,7 +16,7 @@ char *_strdup(char *str)
 	char *ptrReturn;
 	int length = 0;
 
-	length = strlen(str);
+	length = _strlen(str);
 
 	if (length == 0)
 		return (NULL);

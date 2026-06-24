@@ -1,13 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * _strlen - returns the length of a string
  * @s: string received from user
+ *
  * Return: the length of the string in numbers
  */
-
 int _strlen(char *s)
 {
 	int count = 0;
@@ -35,12 +34,17 @@ char *_strdup(char *str)
 	char *ptrReturn;
 	int length = 0;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	length = _strlen(str);
 
-	if (length == 0)
+	ptrReturn = (char *)malloc(sizeof(char) * length + 1);
+	if (ptrReturn == NULL)
+	{
 		return (NULL);
-
-	ptrReturn = (char *)malloc(sizeof(char) * length);
+	}
 	temp = ptrReturn;
 
 	while (length > 0)
@@ -50,5 +54,6 @@ char *_strdup(char *str)
 		str++;
 		length--;
 	}
+	*temp = '\0';
 	return (ptrReturn);
 }

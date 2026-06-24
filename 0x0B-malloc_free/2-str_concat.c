@@ -1,13 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * _strlen - returns the length of a string
  * @s: string received from user
+ *
  * Return: the length of the string in numbers
  */
-
 int _strlen(char *s)
 {
 	int count = 0;
@@ -31,37 +30,35 @@ int _strlen(char *s)
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *ptrReturn;
-	char *temp;
-	int s1Length = 0;
-	int s2Length = 0;
-	int total = 0;
-	int i = 0;
+	char *ptrReturn, *temp;
+	int s1Length = 0, s2Length = 0, total = 0, i = 0;
+
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
 	s1Length = _strlen(s1);
 	s2Length = _strlen(s2);
 	total = s1Length + s2Length;
 
-	if (s1Length == 0 && s2Length == 0)
-	{
+	ptrReturn = (char *)malloc(sizeof(char) * total + 1);
+	if (ptrReturn == NULL)
 		return (NULL);
-	}
 
-	ptrReturn = (char *)malloc(sizeof(char) * total);
 	temp = ptrReturn;
-
 	for (i = 0; i < s1Length; i++)
 	{
 		*temp = *s1;
 		temp++;
 		s1++;
 	}
-	i = 0;
 	for (i = 0; i < s2Length; i++)
 	{
 		*temp = *s2;
 		temp++;
 		s2++;
 	}
+	*temp = '\0';
 	return (ptrReturn);
 }

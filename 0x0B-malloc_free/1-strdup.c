@@ -3,6 +3,25 @@
 #include <string.h>
 
 /**
+ * _strlen - returns the length of a string
+ * @s: string received from user
+ * Return: the length of the string in numbers
+ */
+
+int _strlen(char *s)
+{
+	int count = 0;
+
+	while (*s != '\0')
+	{
+		count++;
+		s++;
+	}
+
+	return (count);
+}
+
+/**
  * _strdup - initializes memory and creates a copy of the given string
  * in that memory location
  * @str: string to copy into new memory space

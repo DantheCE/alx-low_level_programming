@@ -27,6 +27,7 @@ The projects in this repository cover a range of fundamental concepts in C:
 | [0x09-static_libraries](./0x09-static_libraries) | Static libraries in C. |
 | [0x0A-argc_argv](./0x0A-argc_argv) | Arguments passed to a program (argc, argv) in C. |
 | [0x0B-malloc_free](./0x0B-malloc_free) | Dynamic memory allocation (malloc, free) in C. |
+| [0x0C-more_malloc_free](./0x0C-more_malloc_free) | More dynamic memory allocation in C. |
 
 ## Technologies
 

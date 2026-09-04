@@ -27,6 +27,7 @@ int **alloc_grid(int width, int height)
 			break;
 		}
 	}
+
 	if (i < height)
 	{
 		for (j = 0; j < i; j++)

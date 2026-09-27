@@ -18,22 +18,36 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	created_dog->name = malloc(sizeof(_strlen(name) + 1));
-	if (created_dog->name == NULL)
+	if (name == NULL)
 	{
-		free(created_dog);
-		return (NULL);
+		created_dog->name = NULL;
 	}
-	created_dog->name = _strcpy(created_dog->name, name);
+	else
+	{
+		created_dog->name = malloc(sizeof(_strlen(name) + 1));
+		if (created_dog->name == NULL)
+		{
+			free(created_dog);
+			return (NULL);
+		}
+		created_dog->name = _strcpy(created_dog->name, name);
+	}
 
-	created_dog->owner = malloc(_strlen(owner) + 1);
-	if (created_dog->owner == NULL)
+	if (owner == NULL)
 	{
-		free(created_dog->name);
-		free(created_dog);
-		return (NULL);
+		created_dog->owner = NULL;
 	}
-	created_dog->owner = _strcpy(created_dog->owner, owner);
+	else
+	{
+		created_dog->owner = malloc(_strlen(owner) + 1);
+		if (created_dog->owner == NULL)
+		{
+			free(created_dog->name);
+			free(created_dog);
+			return (NULL);
+		}
+		created_dog->owner = _strcpy(created_dog->owner, owner);
+	}
 
 	created_dog->age = age;
 	return (created_dog);

@@ -1,6 +1,7 @@
-#include "3-calc.h"
 #include <string.h>
 #include <stddef.h>
+#include "3-calc.h"
+
 /**
  * get_op_func - function pointer used to run functions defined in header file with array mechanism
  *
@@ -9,8 +10,7 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-	op_t ops[] = 
-	{
+	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},

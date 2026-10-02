@@ -20,10 +20,4 @@ int op_mod(int a, int b);
 
 int (*get_op_func(char *s))(int, int);
 
-/**
- * _strcmp - compares the ascii values of two strings
- * @s1: first string
- * @s2: second string
- * Return: zero if equal, result of subtraction if not
- */
 #endif

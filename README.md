@@ -14,6 +14,7 @@ The projects in this repository cover a range of fundamental concepts in C:
 - Static and dynamic libraries.
 - Memory allocation (`malloc`, `free`).
 - Interfaces like typedef
+- Function pointers.
 - Data structures (structs, linked lists, stacks, queues, trees, hash tables).
 ## Projects
 
@@ -30,6 +31,7 @@ The projects in this repository cover a range of fundamental concepts in C:
 | [0x0C-more_malloc_free](./0x0C-more_malloc_free) | More dynamic memory allocation in C. |
 | [0x0D-preprocessor](./0x0D-preprocessor) | C - Preprocessor. |
 | [0x0E-structures_typedef](./0x0E-structures_typedef) | structs and typedef in C. |
+| [0x0F-function_pointers](./0x0F-function_pointers) | Function pointers in C. |
 
 ## Technologies
 

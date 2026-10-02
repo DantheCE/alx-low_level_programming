@@ -1,6 +1,6 @@
 #include "3-calc.h"
+#include <string.h>
 #include <stddef.h>
-#define ARRAY_LENGTH(x) (sizeof(x)/sizeof(x[0]))
 /**
  * get_op_func - function pointer used to run functions defined in header file with array mechanism
  *
@@ -20,9 +20,9 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (i < (ARRAY_LENGTH(ops)))
+	while (ops[i].op)
 	{
-		if(ops[i].op != NULL && (_strcmp(ops[i].op, s)) == 0)
+		if(ops[i].op != NULL && (strcmp(ops[i].op, s)) == 0)
 		{
 			return (ops[i].f);
 		}

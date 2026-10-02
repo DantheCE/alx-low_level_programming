@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - executes function pointed to by action using array members as arguments
+ * array_iterator - runs function pointed to by action parameters in array
  *
  * @array: an array holding integers in each index
  * @size: size of said array
